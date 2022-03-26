@@ -4,6 +4,9 @@
   --primary-color: #6c63ff;
   --secondary-color: #fff;
 }
+body {
+  margin-bottom: 40px;
+}
 
 h1,
 h2,
@@ -15,18 +18,21 @@ h6 {
   font-weight: bold;
   color: #000;
 }
+
 h1 {
   font-size: 96px;
   margin-bottom: 10px;
 }
+
 h2 {
-  font-size: 24px;
+  font-size: 64px;
 }
 
 p {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
   margin: 0;
+  line-height: 1.7;
 }
 
 .hero {
@@ -34,6 +40,12 @@ p {
   text-align: center;
   padding: 130px 20px;
 }
+
+.hero h2 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
 .hero p {
   font-size: 36px;
   font-weight: bold;
@@ -44,6 +56,7 @@ p {
   font-size: 18px;
   font-weight: 500;
   padding: 15px 35px;
+  border-radius: 5px;
   color: var(--secondary-color);
   background-color: var(--primary-color);
   transition: all 200ms ease-in-out;
@@ -53,4 +66,42 @@ p {
   color: var(--primary-color);
   background-color: var(--secondary-color);
   border: 1px solid var(--primary-color);
+}
+
+.btn.btn-branding-outline {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 35px;
+  border-radius: 5px;
+  line-height: 27px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.btn.btn-branding-outline:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 46px;
+    line-height: 1.7;
+  }
+  h2 {
+    font-size: 42px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
